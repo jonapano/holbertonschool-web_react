@@ -1,5 +1,6 @@
 import './Notifications.css';
 import { getLatestNotification } from './utils';
+import closeIcon from './assets/close-icon.png';
 
 export default function Notifications() {
     const handleClick = () => {
