@@ -1,0 +1,17 @@
+{
+    "presets": [
+        "@babel/preset-env",
+<<<<<<< HEAD
+        ["@babel/preset-react", { "runtime": "automatic" }]
+    ]
+}
+=======
+        [
+            "@babel/preset-react",
+            {
+                "runtime": "automatic"
+            }
+        ]
+    ]
+}
+>>>>>>> 0ef1421 (from first)
