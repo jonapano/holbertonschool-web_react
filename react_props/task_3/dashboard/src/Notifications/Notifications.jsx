@@ -1,5 +1,5 @@
 import React from 'react';
-import './Notification.css';
+import './Notifications.css';
 import closeIcon from '../assets/close-icon.png';
 import { getLatestNotification } from '../utils/util';
 import NotificationItem from './NotificationItem';

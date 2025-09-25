@@ -1,18 +1,18 @@
 import { shallow } from 'enzyme';
-import Notification from './Notification';
+import Notifications from './Notifications';
 import NotificationItem from './NotificationItem';
 
 
 describe('Testing <Notification /> component', () => {
     describe('Notification renders without crashing', () => {
         it ('should render Notification withour crashing', () => {
-            const wrapper = shallow(<Notification />);
+            const wrapper = shallow(<Notifications />);
             expect(wrapper.exists()).toEqual(true);
         });
     });
     describe('Notification renders three list items', () => {
         it ('should render three list items', () => {
-            const wrapper = shallow(<Notification />);
+            const wrapper = shallow(<Notifications />);
             wrapper.update();
             const list = wrapper.find(NotificationItem);
             expect(list).toBeDefined();
@@ -21,7 +21,7 @@ describe('Testing <Notification /> component', () => {
     });
     describe('Notification renders a text', () => {
         it ('should render a given text', () => {
-            const wrapper = shallow(<Notification />);
+            const wrapper = shallow(<Notifications />);
             wrapper.update();
             expect(wrapper.find('.Notification p').text()).toEqual('Here is the list of notifications');
         });
